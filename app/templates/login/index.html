@@ -1,0 +1,16 @@
+{% extends "login/base.html" %}
+{% block myHead %}
+    {{ super() }}
+    <style type="text/css">
+    .lessons {color:red;}
+    </style>
+{% endblock %}
+{% block content %}
+    {{ name }}
+    <div>
+        <span>{{ welcome }}</span>
+    </div>
+    {% from 'login/myMacro.html' import show_lessons, show_lessons_info %} 
+    {{ show_lessons(lessons) }} 
+    {{ show_lessons_info(lessons_info) }}
+{% endblock %}

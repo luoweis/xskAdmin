@@ -1,0 +1,9 @@
+
+{% extends "base.html" %} 
+{% block container %}
+    <h2>{{ content }}</h2>
+    <p>{{ warning.msg }}</p>
+    {% for student in students_10 %}
+        <p>{{ student.student_name }} | {{ student.student_info }}</p>
+    {% endfor %} 
+{% endblock %}

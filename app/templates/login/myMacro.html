@@ -1,0 +1,23 @@
+{% macro show_lessons(lessons) %}
+<div>
+	<p>{{ '<em>hello</em>' | safe }}</p>
+	<p>{{ '<em>hello</em>' | striptags }}</p>
+    {% for lesson in lessons|listreverse %}
+    <span>{{ lesson }}</span>
+    <br> {% endfor %}
+</div>
+{% endmacro %}
+
+
+{% macro show_lessons_info(lessons_info) %}
+<div>
+    <p class="lessons">开课情况</p>
+    {% filter upper %}
+    {% for lesson_info in lessons_info %} 
+    	{% if lesson_info.start %}
+    		<p>{{ lesson_info.id }} \ {{ lesson_info.name }} \ {{ lesson_info.start }}</p>
+    	{% endif %}
+    {% endfor%}
+    {% endfilter %}
+</div>
+{% endmacro %}
