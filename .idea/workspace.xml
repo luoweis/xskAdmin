@@ -2,114 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af110a0c-8be2-4934-8a4b-1b77b8a5f8b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/xskAdmin.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bpurls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/common/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/common/code.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/common/util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/common/xsk_mysql_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/Test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/XSK.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/animate.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/bootstrap-slider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/ionicons.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/jquery.tagsinput.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/morris.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/owl.carousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/owl.theme.default.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/simplify.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/simplify.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/runner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/jquery-1.11.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/jquery.easypiechart.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/jquery.flot.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/jquery.localScroll.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/jquery.popupoverlay.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/jquery.scrollTo.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/jquery.slimscroll.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/modernizr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/morris.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/rapheal.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/simplify/simplify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/simplify/simplify_dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/sparkline.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/uncompressed/datepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/uncompressed/jquery.sortable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/uncompressed/skycons.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/waypoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/login/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/login/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/login/myMacro.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/main/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/teachingResources/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/blank.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/blog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/button.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/calendar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/datatable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/dropzone.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/error404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/form_element.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/form_validation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/form_wizard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/gallery.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/hello.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/inbox.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/invoice.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/landing/css/extralayers.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/landing/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/landing/images/b1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/landing/images/dummy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/landing/images/frontend/mockup1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/landing/landing.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/landing/rs-plugin/css/settings.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/landing/rs-plugin/js/jquery.themepunch.revolution.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/landing/rs-plugin/js/jquery.themepunch.tools.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/lockscreen.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/nestable_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/pricing.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/signin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/single_post.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/static_table.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/tab.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/timeline.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/treeview.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/ui_element.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/widget.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates_bak/www.jq22.com.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/apis/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/apis/parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/apis/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/apis/view.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/teaching.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev_env.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gunicorn.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renewCode.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/xskAdmin.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -132,6 +30,7 @@
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="html" value="6" />
+          <entry key="md" value="1" />
           <entry key="py" value="9" />
           <entry key="sh" value="1" />
         </counts>
@@ -139,21 +38,24 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="6" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Python" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gitignore" value="7" />
+          <entry key="gitignore" value="11" />
           <entry key="html" value="22" />
+          <entry key="md" value="36" />
           <entry key="py" value="132" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="22" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="Markdown" value="36" />
+          <entry key="PLAIN_TEXT" value="11" />
           <entry key="Python" value="132" />
         </counts>
       </usages-collector>
@@ -162,10 +64,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="30">
+                <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -192,6 +97,7 @@
         <option value="$PROJECT_DIR$/app/views/teaching.py" />
         <option value="$PROJECT_DIR$/app/templates/base.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -318,7 +224,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32951653" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.45165396" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -398,7 +304,17 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
