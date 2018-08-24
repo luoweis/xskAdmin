@@ -7,13 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" type="text/css" href="../../static/bootstrap/css/bootstrap.min.css">
-    <!-- Font Awesome -->
+    {% block myheadJSCSS %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
-    <!-- ionicons -->
-    <!-- Simplify -->
-    <link href="../../static/css/simplify.min.css" rel="stylesheet">
+    <link href="/static/css/simplify.min.css" rel="stylesheet">
+    {% endblock %}
 </head>
 
 <body class="overflow-hidden">
@@ -49,7 +47,7 @@
                     <div class="pull-right m-right-sm">
                         <div class="user-block hidden-xs">
                             <a href="#" id="userToggle" data-toggle="dropdown">
-                                    <img src="../../static/images/runner.png" alt="" class="img-circle inline-block user-profile-pic">
+                                    <img src="/static/images/runner.png" alt="" class="img-circle inline-block user-profile-pic">
                                     <div class="user-detail inline-block">
                                         luoweis
                                         <i class="fa fa-angle-down"></i>
@@ -109,37 +107,6 @@
                         </li>
                     </ul>
                 </div>
-                <!-- <div class="sidebar-fix-bottom clearfix">
-                    <div class="user-dropdown dropup pull-left">
-                        <a href="#" class="dropdwon-toggle font-18" data-toggle="dropdown"><i class="ion-person-add"></i>
-                            </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="inbox.html">
-                                        Inbox
-                                        <span class="badge badge-danger bounceIn animation-delay2 pull-right">1</span>
-                                    </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                        Notification
-                                        <span class="badge badge-purple bounceIn animation-delay3 pull-right">2</span>
-                                    </a>
-                            </li>
-                            <li>
-                                <a href="#" class="sidebarRight-toggle">
-                                        Message
-                                        <span class="badge badge-success bounceIn animation-delay4 pull-right">7</span>
-                                    </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="#">Setting</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="lockscreen.html" class="pull-right font-18"><i class="ion-log-out"></i></a>
-                </div> -->
             </div>
             <!-- sidebar-inner -->
         </aside>
@@ -155,21 +122,13 @@
     </div>
     <!-- /wrapper -->
     <a href="#" class="scroll-to-top hidden-print"><i class="fa fa-chevron-up fa-lg"></i></a>
-    <!-- Le javascript
-        ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- Jquery -->
-    <script src="../../static/js/jquery-1.11.1.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="../../static/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Slimscroll -->
-    <script src='../../static/js/jquery.slimscroll.min.js'></script>
-    <!-- Popup Overlay -->
-    <script src='../../static/js/jquery.popupoverlay.min.js'></script>
-    <!-- Modernizr -->
-    <script src='../../static/js/modernizr.min.js'></script>
-    <!-- Simplify -->
-    <script src="../../static/js/simplify/simplify.js"></script>
+    {% block myFooterJSCSS %}
+    <script src="/static/js/jquery-1.11.1.min.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script src='/static/js/jquery.slimscroll.min.js'></script>
+    <script src='/static/js/jquery.popupoverlay.min.js'></script>
+    <script src='/static/js/modernizr.min.js'></script>
+    <script src="/static/js/simplify/simplify.js"></script>
+    {% endblock %}
 </body>
-
 </html>
