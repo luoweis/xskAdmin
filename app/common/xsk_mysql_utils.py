@@ -43,6 +43,7 @@ def get_students_total():
     total = XSKStudent.query.count()
     return total
 
+
 def add_student_single(**kwargs):
     """
     一次只增加一个学生的信息，写入数据库中
@@ -54,8 +55,8 @@ def add_student_single(**kwargs):
     if XSKStudent.query.filter_by(student_ID=kwargs.get("student_ID")).all():
         return {"msg": "该学生已经注册了信息"}
     try:
-        xsk_student = XSKStudent(**kwargs)
-        db.session.add(xsk_student)
+        student1 = XSKStudent(**kwargs)
+        db.session.add(student1)
         db.session.commit()
     except Exception as error:
         return {"error_msg": error}

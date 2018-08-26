@@ -52,23 +52,23 @@ def students_show():
     }, cls=DateEncoder)
 
 
-@teachingBP.route('/students/add/', methods=['GET'])
+# @teachingBP.route('/students/add/', methods=['GET'])
 def student_add():
     """
     表单的方式提交学生信息
     :return:
     """
     student = {
-        "student_name": "测试4",
-        "student_age": 24,
-        "student_sex": 1,
-        "student_phone": "149148181115",
-        "student_ID": "37068419960825872235",
-        "student_info": "记录学生信息，但未激活",
-        "status": 0
+        "student_name": "测试2",
+        "student_age": 22,
+        "student_sex": 0,
+        "student_phone": "13608932761",
+        "student_ID": "370887199208237621",
+        "student_info": "CCIE，缴费，等待开课通知",
+        "status": 1
     }
     res = add_student_single(**student)
-    return "ok"
+    return res
 
 
 @teachingBP.route('/students/adds/', methods=['GET'])
