@@ -5,9 +5,10 @@ from app.bpurls import teachingBP
 from app.common.xsk_mysql_utils import *
 from app.common.util import *
 from flask import request
-
+from flask_login import login_required
 
 @teachingBP.route('/students/', methods=['GET'])
+@login_required
 def students():
     context = {}
     context["title"] = "xsk-学生管理"
@@ -17,6 +18,7 @@ def students():
 
 
 @teachingBP.route('/show/students/', methods=['GET'])
+@login_required
 def students_show():
     """
     获取学生的数量

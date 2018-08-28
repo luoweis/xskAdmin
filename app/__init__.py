@@ -3,7 +3,7 @@
 import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-
+from flask_login import LoginManager
 
 app = Flask(__name__)
 
@@ -11,6 +11,12 @@ app = Flask(__name__)
 app.config.update(RESTFUL_JSON=dict(ensure_ascii=False))
 app.config['JSON_AS_ASCII'] = False
 app.secret_key = os.urandom(32)
+
+login_manager = LoginManager()
+# 指定未登录时跳转的页面，即被拦截后跳转到我们定义的authBP/login的路由中
+login_manager.login_view = "authBP.login"
+login_manager.login_message = '请登录以访问此页面'
+login_manager.init_app(app)
 
 """
 username: 用户名
@@ -26,7 +32,7 @@ app.config['SQLALCHEMY_ECHO'] = False
 db = SQLAlchemy(app, use_native_unicode='utf8')
 
 
-from app.views import login, apis, main, teaching
+from app.views import auth, apis, main, teaching
 # 注册蓝本模块
 # 验证登陆的模块
 from app.bpurls import authBP
