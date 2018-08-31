@@ -3,7 +3,7 @@
 from flask import render_template, request, flash, redirect, url_for
 from app.bpurls import authBP
 from app.forms.login import LoginForm
-from app.common.xsk_mysql_utils import *
+from app.common.xsk_mysql_student_utils import *
 from app.common.util import *
 from flask_login import login_user, login_required, logout_user
 from app import login_manager

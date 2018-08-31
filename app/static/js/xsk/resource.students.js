@@ -108,6 +108,7 @@ function del(id){
     alert("delete!")
 }
 
+
 //使用getSelections即可获得，row是json格式的数据
 var $table = $('#mytable'),
     $choices = $('#mychoices');

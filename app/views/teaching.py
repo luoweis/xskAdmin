@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 # -*- coding=utf-8 -*-
-from flask import render_template
+from flask import render_template, redirect, url_for, request
 from app.bpurls import teachingBP
-from app.common.xsk_mysql_utils import *
+from app.common.xsk_mysql_student_utils import *
 from app.common.util import *
 from flask import request
 from flask_login import login_required
+
 
 @teachingBP.route('/students/', methods=['GET'])
 @login_required
@@ -14,7 +15,7 @@ def students():
     context["title"] = "xsk-学生管理"
     context["content"] = ''
     context["warning"] = ""
-    return render_template('teachingResources/index.html', **context)
+    return render_template('teachingResources/students.html', **context)
 
 
 @teachingBP.route('/show/students/', methods=['GET'])
@@ -54,23 +55,26 @@ def students_show():
     }, cls=DateEncoder)
 
 
-# @teachingBP.route('/students/add/', methods=['GET'])
+
+@teachingBP.route('/students/add/', methods=['POST'])
+@login_required
 def student_add():
     """
     表单的方式提交学生信息
     :return:
     """
     student = {
-        "student_name": "测试2",
-        "student_age": 22,
-        "student_sex": 0,
-        "student_phone": "13608932761",
-        "student_ID": "370887199208237621",
-        "student_info": "CCIE，缴费，等待开课通知",
-        "status": 1
+        "student_name": request.form.get("student_name"),
+        "student_age": request.form.get("student_age"),
+        "student_sex": request.form.get("student_sex"),
+        "student_phone": request.form.get("student_phone"),
+        "student_ID": request.form.get("student_ID"),
+        "student_info": request.form.get("student_info"),
+        "status": 0
     }
-    res = add_student_single(**student)
-    return res
+
+    add_student_single(**student)
+    return redirect(url_for("teachingBP.students"))
 
 
 @teachingBP.route('/students/adds/', methods=['GET'])

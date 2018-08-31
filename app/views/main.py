@@ -6,7 +6,7 @@ from flask_login import login_required
 
 @mainBP.route('/', methods=['GET'])
 @mainBP.route('/main', methods=['GET'])
-# @login_required
+@login_required
 def main():
     context = {}
     context["title"] = "XSK"

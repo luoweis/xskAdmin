@@ -17,6 +17,7 @@ class XSKStudent(db.Model):
     student_ID = db.Column(db.String(32), nullable=True, unique=True)
     student_info = db.Column(db.String(100), nullable=True)
     status = db.Column(db.SmallInteger, nullable=False, default=1, doc="学生状态，0-禁用，1-启动")
+    student_image = db.Column(db.String(100), nullable=True)
     create_datetime = db.Column(db.DateTime, server_default=db.text("CURRENT_TIMESTAMP"), doc="创建时间")
     update_datetime = db.Column(db.DateTime, nullable=False,server_default=db.text("CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"), doc="更新时间")
 
@@ -39,6 +40,7 @@ class XSKTeacher(db.Model):
     teacher_sex = db.Column(db.SmallInteger, nullable=False, default=1, doc="教师性别，0-男性，1-女性")
     teacher_info = db.Column(db.String(100), nullable=True)
     status = db.Column(db.SmallInteger, nullable=False, default=1, doc="教师状态，0-禁用，1-启动")
+    teacher_image = db.Column(db.String(100), nullable=True)
     create_datetime = db.Column(db.DateTime, server_default=db.text("CURRENT_TIMESTAMP"), doc="创建时间")
     update_datetime = db.Column(db.DateTime, nullable=False,server_default=db.text("CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"), doc="更新时间")
 
@@ -58,6 +60,7 @@ class XSKClass(db.Model):
     class_period = db.Column(db.String(32), nullable=True)
     class_start = db.Column(db.String(32), nullable=True)
     status = db.Column(db.SmallInteger, nullable=False, default=1, doc="课程状态，0-禁用，1-启动")
+    class_image = db.Column(db.String(100), nullable=True)
     create_datetime = db.Column(db.DateTime, server_default=db.text("CURRENT_TIMESTAMP"), doc="创建时间")
     update_datetime = db.Column(db.DateTime, nullable=False,server_default=db.text("CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"), doc="更新时间")
 
