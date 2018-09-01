@@ -24,7 +24,7 @@
 					{% with errors = get_flashed_messages(category_filter=["error"]) %}
 						{% if errors %}
 						    {% for msg in errors %}
-						    	{{ msg }}
+						    	<a style="color:red;">{{ msg }}</a>
 						    {% endfor %}
 						{% endif %}
 					{% endwith %}
@@ -32,10 +32,10 @@
 					<form action="{{ url_for("authBP.login") }}" method="post" name="login">
 					 {{ form.csrf_token }}
 						<div class="form-group m-bottom-md">
-							{{ form.username(size=80,class="form-control") }}<br>
+							{{ form.username(size=80,placeholder="账号",class="form-control") }}<br>
 						</div>
 						<div class="form-group">
-							{{ form.password(size=80,class="form-control") }}
+							{{ form.password(size=80,placeholder="密码",class="form-control") }}
 						</div>
 
 						<div class="m-top-md p-top-sm">

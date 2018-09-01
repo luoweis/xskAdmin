@@ -6,15 +6,18 @@ from app.common.xsk_mysql_student_utils import *
 from app.common.util import *
 from flask import request
 from flask_login import login_required
+from app.forms.students_add import StudentAddForm
 
 
 @teachingBP.route('/students/', methods=['GET'])
 @login_required
 def students():
+    form = StudentAddForm()
     context = {}
     context["title"] = "xsk-学生管理"
     context["content"] = ''
     context["warning"] = ""
+    context["form"] = form
     return render_template('teachingResources/students.html', **context)
 
 

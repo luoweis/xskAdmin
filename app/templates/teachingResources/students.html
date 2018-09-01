@@ -20,6 +20,7 @@
 
     <!-- 模态框示例（Modal） -->
 <form method="post" action="{{ url_for("teachingBP.student_add") }}" class="form-horizontal" role="form" id="form_data"  style="margin: 20px;">
+
 <div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -33,50 +34,53 @@
             </div>
             <div class="modal-body">
                 <form class="form-horizontal" role="form">
+                    {{ form.csrf_token }}
                     <div class="form-group">
-                        <label for="student_name" class="col-sm-3 control-label">student_name</label>
+                            {{ form.student_name.label(class="col-sm-3 control-label") }}
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" id="student_name" name="student_name" value=""
-                                   placeholder="请输入用户姓名">
+                            {{ form.student_name(size=80,placeholder="请输入用户姓名", class="form-control") }}
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="student_age" class="col-sm-3 control-label">student_age</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" name="student_age" value="" id="student_age"
-                                   placeholder="年龄">
+                            {{ form.student_age(size=80,class="form-control") }}
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="student_sex" class="col-sm-3 control-label">student_sex</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" name="student_sex" value="" id="student_sex"
-                                   placeholder="性别">
+{#                            <input type="text" class="form-control" name="student_sex" value="" id="student_sex"#}
+{#                                   placeholder="性别">#}
+                            {{ form.student_sex(size=80,class="form-control") }}
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="student_phone" class="col-sm-3 control-label">student_phone</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" name="student_phone" value="" id="student_phone"
-                                   placeholder="电话">
+{#                            <input type="text" class="form-control" name="student_phone" value="" id="student_phone"#}
+{#                                   placeholder="电话">#}
+                            {{ form.student_phone(size=80,class="form-control") }}
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="student_ID" class="col-sm-3 control-label">student_phone</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" name="student_ID" value="" id="student_ID"
-                                   placeholder="身份证号码">
+{#                            <input type="text" class="form-control" name="student_ID" value="" id="student_ID"#}
+{#                                   placeholder="身份证号码">#}
+                            {{ form.student_ID(size=80,class="form-control") }}
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="student_info" class="col-sm-3 control-label">student_info</label>
                         <div class="col-sm-9">
-                            <textarea  class="form-control"  name="student_info" value="student_info" id="student_info"
-                                   placeholder="备注">
-
-                            </textarea>
+{#                            <textarea  class="form-control"  name="student_info" value="student_info" id="student_info"#}
+{#                                   placeholder="备注">#}
+{##}
+{#                            </textarea>#}
+                            {{ form.student_info(size=200,class="form-control") }}
                         </div>
                     </div>
                 </form>
