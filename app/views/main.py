@@ -5,10 +5,12 @@ from app.bpurls import mainBP
 from flask_login import login_required
 from app.models.XSK import *
 from app.common.util import *
+from collections import Counter
+
 
 @mainBP.route('/', methods=['GET'])
 @mainBP.route('/main', methods=['GET'])
-# @login_required
+@login_required
 def main():
     context = {}
     context["title"] = "XSK"
@@ -42,8 +44,6 @@ def main():
 
     student_1 = XSKStudent.query.filter_by(student_sex="1").count()
     student_0 = XSKStudent.query.filter_by(student_sex="0").count()
-
-
 
     echarts_data = {
         "lengend": ['男','女',],
