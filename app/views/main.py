@@ -3,10 +3,12 @@
 from flask import render_template
 from app.bpurls import mainBP
 from flask_login import login_required
+from app.models.XSK import *
+from app.common.util import *
 
 @mainBP.route('/', methods=['GET'])
 @mainBP.route('/main', methods=['GET'])
-@login_required
+# @login_required
 def main():
     context = {}
     context["title"] = "XSK"
@@ -35,6 +37,22 @@ def main():
         },
 
     ]
+
+    """ 从数据库中提取数据 """
+
+    student_1 = XSKStudent.query.filter_by(student_sex="1").count()
+    student_0 = XSKStudent.query.filter_by(student_sex="0").count()
+
+
+
+    echarts_data = {
+        "lengend": ['男','女',],
+        "items_data": [
+                {"value":student_0, "name":'男'},
+                {"value":student_1, "name":'女'},
+            ]
+    }
+    context["echarts_data"] = echarts_data
     return render_template('main/index.html', **context)
 
 
